@@ -1,0 +1,73 @@
+<style>
+    .portada-container{
+        background-color: black;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+        margin: 0;
+        -webkit-box-shadow: 0px 10px 26px -7px rgb(0 0 0 / 50%);
+        -moz-box-shadow: 0px 10px 26px -7px rgba(0,0,0,0.5);
+        box-shadow: 0px 10px 26px -7px rgb(0 0 0 / 50%);
+    }
+    .portada-subcontainer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    h1{
+        color: #D4AF37;
+        text-align: center;
+    }
+
+    .portada-mobile{
+        display: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        .portada-container{
+            display: none;
+        }
+        .portada-mobile{
+            position: fixed;
+            display: initial;
+            z-index: 2000;
+        }
+        .portada-container-mobile{
+            
+            background-color: black;
+            width: 100%;
+            display: flex;
+            padding:15px 0 10px 0;
+            justify-content: center;
+        }
+        .portada-container-mobile h1{
+            margin: 0;
+            font-size: 2rem;
+            padding: 0;
+        }
+    }
+</style>
+
+<div class="portada-container">
+    <div class="portada-subcontainer">
+        <div style="display: flex; justify-content: center;">
+            <img src="img/icons/iso_laTrattoria.png" alt="" width="75px">
+        </div>
+        <h1>La Trattoria</h1>
+        <div style="display: flex; justify-content: center;">
+            <img src="img/flag.png" alt="" width="195px">
+        </div>
+    </div>
+    
+</div>
+
+<div class="portada-mobile">
+    <div class="portada-container-mobile">
+        <img src="img/icons/iso_laTrattoria.png" alt="" width="35px" style="margin-top: 7px; margin-right: 5px;">
+        <h1>La Trattoria</h1>
+    </div>
+    <img src="img/flag.png" alt="" width="100%" style="margin-top:-13px">
+</div>

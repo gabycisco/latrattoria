@@ -1,0 +1,358 @@
+/* FONTS - START */
+  @font-face {
+    font-family: "robotoBlack";
+    src: url("fonts/Roboto-Black.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoBlackItalic";
+    src: url("fonts/Roboto-BlackItalic.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoBold";
+    src: url("fonts/Roboto-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoBoldItalic";
+    src: url("fonts/Roboto-BoldItalic.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoItalic";
+    src: url("fonts/Roboto-Italic.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoLight";
+    src: url("fonts/Roboto-Light.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoLightItalic";
+    src: url("fonts/Roboto-LightItalic.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoMedium";
+    src: url("fonts/Roboto-Medium.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoMediumItalic";
+    src: url("fonts/Roboto-MediumItalic.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoRegular";
+    src: url("fonts/Roboto-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoRegular";
+    src: url("fonts/Roboto-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoThin";
+    src: url("fonts/Roboto-Thin.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoThinItalic";
+    src: url("fonts/Roboto-ThinItalic.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoCondensedBold";
+    src: url("fonts/RobotoCondensed-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoCondensedBoldItalic";
+    src: url("fonts/RobotoCondensed-BoldItalic.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoCondensedItalic";
+    src: url("fonts/RobotoCondensed-Italic.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoCondensedLight";
+    src: url("fonts/RobotoCondensed-Light.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoCondensedLightItalic";
+    src: url("fonts/RobotoCondensed-LightItalic.ttf");
+  }
+
+  @font-face {
+    font-family: "robotoCondensedRegular";
+    src: url("fonts/RobotoCondensed-Regular.ttf");
+  }
+
+/* FONTS - END */
+
+/* LOADING SPINNER - START */
+  .lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+/* LOADING SPINNER - END */
+
+/* GENERAL ELEMENTS - START */
+
+  html {
+    font-size: 15px;
+    font-family: "robotoRegular";
+  }
+
+  hr {
+    opacity: 1 !important;
+  }
+
+  body {
+    color: #707070;
+    background-color: #F5F5F5;
+    position: relative;
+  }
+
+  h2{
+    margin-top:50px;
+    margin-bottom:10px;
+    text-align: center;
+    width: 100%;
+    color: #313131;
+    font-family: "robotoLight";
+  }
+  h3{
+    margin-top:50px;
+    margin-bottom:10px;
+    text-align: center;
+    width: 100%;
+    color: #313131;
+    font-family: "robotoLight";
+  }
+
+  .full-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+  }
+
+  .main-container{
+    max-width: 1350px;
+    width:100%;
+  }
+
+  .btn-primary{
+    background-color: #FCBF41;
+    border-color: #FCBF41;
+    font-family: "robotoRegular";
+    border-radius: 7px;
+    font-weight:bold;
+  }
+
+  .btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+    background-color: #faa700;
+    border-color: #faa700;
+  }
+
+  .btn-secondary{
+    background-color: #313131;
+    border-color:#313131;
+    font-family: "robotoRegular";
+    border-radius: 7px;
+    font-weight:bold;
+  }
+
+  .btn-secondary:hover{
+    background-color: #1b1b1b;
+    border-color: #1b1b1b;
+  }
+  .table-map{
+    background-color: #313131;
+    color: white;
+    font-family: "robotoLight";
+  }
+
+  .table-map_content{
+    font-family: "robotoRegular";
+    background-color: white;
+  }
+
+  
+
+/* GENERAL ELEMENTS - END */
+
+
+/* SWEET ALERT 2 - START */
+
+  .swal2-popup {
+    border-radius: 8px !important;
+  }
+
+  .swal2-styled.swal2-confirm {
+    background-color: #FCBF41 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-family: robotoBold !important;
+    font-size: 14px !important;
+  }
+
+  .swal2-actions:not(.swal2-loading) .swal2-styled:hover {
+    background-color: #faa700 !important;
+  }
+
+  .swal2-styled:focus {
+    outline: 0;
+  }
+
+  .swal2-close:focus, .swal2-close:hover {
+    color: #faa700 !important;
+  }
+
+  .swal2-title {
+    color: #313131 !important;
+    font-family: robotoBold !important;
+    font-size: 1.2rem !important;
+    justify-content: center!important;
+  }
+
+  .swal2-content {
+    color: #707070 !important;
+    font-size: 1rem !important;
+    font-family: robotoMedium !important;
+  }
+
+  .swal2-loader {
+    border-color: #FCBF41  transparent #FCBF41 transparent !important;
+  }
+
+  .swal2-timer-progress-bar {
+    background: #313131 !important;
+  }
+
+/* SWEET ALERT 2 - END */ 
+
+/* NAVBAR - START */ 
+  /* The side navigation menu */
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 2000; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #313131; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+  }
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    _color: #f1f1f1;
+    color:#FCBF41;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    font-size: 66px;
+    margin-left: 50px;
+    color: white;
+    padding: 0!important;
+    margin:0!important;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/* NAVBAR - END */
+
+
+/* WHATSAPP BTN - START */
+  .btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:35px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+  }
+  .btn-wsp:hover{
+    background: #20ba5a;
+  }
+  @media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+        bottom:25px;
+    }
+  }
+/* WHATSAPP BTN - END */

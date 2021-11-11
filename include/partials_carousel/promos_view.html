@@ -1,0 +1,71 @@
+<style>
+    .promos-container{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 600px;
+        padding: 30px 0;
+    }
+
+    .promos-container .left-container, .promos-container .right-container{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .promos-container .left-container h2{
+        font-size: 4rem;
+        padding: 0;
+        margin:0;
+    }
+    .promos-container .left-container h3{
+        font-size: 2.55rem;
+        padding: 0;
+        margin:0;
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        .promos-container .left-container h2{
+            font-size: 2rem;
+            padding: 0;
+            margin:0;
+        }
+        .promos-container .left-container h3{
+            font-size: 1.30rem;
+            padding: 0;
+            margin:0;
+        }
+        /* .right-container img{
+            width: 150px;
+        } */
+        .promos-container .left-container{
+            justify-content: flex-end;
+            padding-right: 15px;
+            width: 40%;
+        }
+        .promos-container .right-container{
+            justify-content: flex-start;
+            padding-left: 15px;
+            width: 60%;
+        }
+    }
+</style>
+
+
+<div style="width: 100%; display: flex; justify-content: center; height: 280px;">
+    <div class="promos-container">
+        <div class="left-container">
+            <div>
+                <h3>DESCUENTO</h3>
+                <h2>JUEVES</h2>
+            </div>
+        </div>
+        <div class="right-container">
+            <img src="img/promos.png" alt="" width="200px">
+        </div>
+    </div>
+</div>

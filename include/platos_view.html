@@ -1,0 +1,55 @@
+<style>
+    .menu-container{
+        width: 100%;
+    }
+    .menu-container .menu-title{
+        background-color: black;
+        color: #D4AF37;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .menu-container .item-container{
+        padding: 10px 20px;
+    }
+
+    .menu-container .item-container .item-container-title{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .background-light{
+        background-color: white;
+    }
+
+    .separador-Interno{
+        font-size: 1.5rem;
+        width:100%;
+        display:flex;
+        justify-content:center;
+        border-bottom: 1px solid gray;
+        margin-bottom: 20px;
+
+    }
+</style>
+
+
+<div style="display: flex; justify-content: center; width: 100%;">
+    <div class="menu-container">
+
+        <div ng-include = "'include/partials_menu/entradas.html'"></div>
+        <div ng-include = "'include/partials_menu/ensaladas.html'"></div>
+        <div ng-include = "'include/partials_menu/pastas_caseras.html'"></div>
+        <div ng-include = "'include/partials_menu/risottos.html'"></div>
+        <div ng-include = "'include/partials_menu/pizzas.html'"></div>
+        <div ng-include = "'include/partials_menu/postres.html'"></div>
+        <div ng-include = "'include/partials_menu/bebidas.html'"></div>
+        <div ng-include = "'include/partials_menu/cafeteria.html'"></div>
+        
+        
+    </div>
+</div>
